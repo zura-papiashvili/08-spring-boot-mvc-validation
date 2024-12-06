@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Confirmation</title>
+  </head>
+  <body>
+    <h1>Customer Confirmation</h1>
+
+    <p>
+      Thank you for registering, <span th:text="${customer.firstName}"></span>!
+    </p>
+
+    <p>Here is the information you provided:</p>
+
+    <ul>
+      <li>First Name: <span th:text="${customer.firstName}"></span></li>
+      <li>Last Name: <span th:text="${customer.lastName}"></span></li>
+      <li>Free Passes: <span th:text="${customer.freePasses}"></span></li>
+    </ul>
+
+    <a href="/">Go back to the form</a>
+  </body>
+</html>
